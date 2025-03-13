@@ -1,0 +1,132 @@
+/* Estilos globales */
+body {
+    font-family: "Oswald", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url("/imagenes/fondo-onda-blanca.avif"); 
+    background-position: center center; 
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    background-attachment: fixed; 
+}
+
+/* Estilos para la franja superior */
+header {
+    background-color: #987D9A; 
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+    z-index: 10; 
+}
+
+/* Estilo para el título principal (Descriptivos de puestos de trabajo) */
+h1 {
+    margin-bottom: 20px;
+    color: #30342c;
+    font-size: 28px;
+    font-weight: bold;
+    white-space: nowrap; 
+}
+
+/* Contenedor principal */
+.loginRegistroPagina {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    padding: 20px;
+    background-color: transparent; 
+    border: none;  
+    box-shadow: none;  
+}
+
+/* Estilo para el logo */
+.logo img {
+    max-height: 130px; 
+    width: auto;
+    border-radius: 60%;
+    margin-right: 20px; 
+}
+
+/* Contenedor del formulario */
+.loginForm {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+.loginForm h2 {
+    font-size: 24px;
+    color: #30342c;
+    margin-bottom: 20px;
+}
+
+/* Estilos para los campos del formulario */
+.loginForm input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Estilo del botón */
+.loginForm button {
+    width: 100%;
+    padding: 12px;
+    background-color: #c287c5;
+    color: #783e7b;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.loginForm button:hover {
+    background-color: #c287c5;
+}
+
+/* Enlace a la página de registro */
+.linkRegister {
+    color: #783e7b;
+    text-decoration: underline;
+    display: block;
+    margin-top: 10px;
+}
+
+.linkRegister:hover {
+    text-decoration: none;
+}
+
+/* Estilo del pie de página */
+footer {
+    background-color: #987D9A;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    left: 0; 
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para pantallas grandes (computadoras) */
+@media (min-width: 768px) {
+    .loginRegistroPagina {
+        width: 400px; 
+    }
+}

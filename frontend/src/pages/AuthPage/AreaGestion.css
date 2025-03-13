@@ -1,0 +1,202 @@
+/* Estilos para la franja superior (header) */
+header {
+    background-color: #987D9A; 
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+    z-index: 10; 
+}
+
+/* Estilos para el logo dentro del header */
+header img {
+    max-height: 130px; 
+    width: auto;
+    border-radius: 60%;
+    margin-right: 20px;
+}
+
+/* Botones de navegación */
+.navigation-buttons {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 160px; /* Aumenta el espacio debajo del header */
+    margin-bottom: 20px;
+    z-index: 5; /* Asegura que no sean tapados */
+}
+/* Ajustar el espacio del body para evitar que lo tape el header */
+body {
+    padding-top: 20px; /* Igual o mayor a la altura del header */
+}
+
+.back-btn, .home-btn {
+    background-color: #783e7b;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+.home-btn {
+    background-color: #008CBA;
+}
+
+.back-btn:hover, .home-btn:hover {
+    opacity: 0.8;
+}
+
+/* Container principal */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #edeef1; 
+    min-height: 100vh;
+    padding-top: 130px; 
+    padding-bottom: 50px; 
+}
+
+/* Contenedor de contenido */
+.content-container {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    padding: 1.5rem;
+    background-color: rgba(248, 240, 240, 0.067);
+    border-radius: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 100%; 
+    max-width: 1000px; 
+    min-height: 200px; 
+}
+
+/* Columnas */
+.left-col, .right-col {
+    min-height: 200px; /* Reducir altura mínima */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Asegurar que los textos comiencen desde arriba */
+    padding-top: 0; /* Evitar separación extra */
+}
+
+/* Columna izquierda (Texto descriptivo) */
+.left-col {
+    width: 45%;
+    padding-right: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    min-height: 500px; 
+}
+
+.left-col h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 0.5rem; 
+    margin-top: -350px; 
+}
+
+
+.left-col p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+    margin-top: 0;
+}
+
+/* Columna derecha (Botones de gestión) */
+.right-col {
+    width: 45%;
+    padding-left: 1rem;
+    border-left: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center; 
+    gap: 10px; 
+    min-height: 500px; 
+}
+
+.right-col h2 {
+    font-size: 1.6rem; 
+    font-weight: bold;
+    color: #222; 
+    margin-bottom: 1rem;
+    margin-top: -350px; 
+}
+
+
+/* Estilos para los botones */
+.right-col button {
+    width: 80%; 
+    display: flex;
+    align-items: center;
+    padding: 0.75rem 1rem;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+    justify-content: center;
+    gap: 8px; 
+    transition: background-color 0.3s ease;
+    min-height: 50px; 
+}
+
+/* Asegurar que los botones no estén alineados horizontalmente */
+.right-col .button-group {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    width: 80%;
+    gap: 15px; 
+}
+
+.right-col .search-btn {
+    background-color: #783e7b;
+}
+
+.right-col .create-btn {
+    background-color: #008CBA;
+}
+
+.right-col button:hover {
+    opacity: 0.8;
+}
+
+/* Espacio uniforme entre botones */
+.right-col .search-btn,
+.right-col .create-btn,
+.right-col .edit-btn,
+.right-col .delete-btn {
+    margin-bottom: 10px;
+}
+
+/* Iconos */
+.right-col .mr-2 {
+    margin-right: 0.5rem;
+}
+
+/* Estilo del pie de página (footer) */
+footer {
+    background-color: #987D9A;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    left: 0; 
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+    height: 80px; 
+}
